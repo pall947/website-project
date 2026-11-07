@@ -142,67 +142,63 @@ header {
   background-color: var(--primary-color-dark);
   position: sticky;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   top: 0;
   width: 100%;
 }
 
-.site-nav {
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(10px);
-  background-color: var(--primary-color-dark);
-}
-
 
 .hamburger {
-  display: block;
   cursor: pointer;
-  color: var(--primary-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   color: var(--neutral-dark);
   font-family: "Oregano", cursive;
-  font-size: 1.2em;
+  font-size: 1.4em;
+}
+
+
+nav {
+  display: none;
 }
 
 #menu-toggle {
   display: none;
 }
 
-nav {
+.site-nav {
   display: none;
+  flex-direction: column;
+  background: var(--primary-color-dark);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }
 
-#menu-toggle:checked ~ nav {
-  display: block;
-}
-
-nav ul {
+.site-nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding: 10px;
   overflow: hidden;
 }
 
-nav ul li a {
-  float: left;
-  display: block;
-  color: var(--primary-color);
-  text-align: center;
-  padding: 14px 16px;
+.site-nav a {
   text-decoration: none;
   color: var(--neutral-dark);
   font-family: "Oregano", cursive;
   font-size: 1.2em;
 }
 
-nav ul li a:hover {
+#menu-toggle:checked~nav {
+  display: flex;
+}
+
+.site-nav a:hover {
   background-color: var(--nav-btn-color-hover);
 }
 
-nav ul li a.active {
+.site-nav a.active {
   background-color: var(--secondary-color-dark);
   color: var(--neutral-light);
 }
@@ -215,9 +211,15 @@ nav ul li a.active {
     display: none;
   }
 
-  nav {
-    display: block;
+  .site-nav {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    justify-items: space-between;
+    width: auto;
+    gap: 100px;
   }
+
 
 }
 
@@ -341,6 +343,70 @@ footer ul {
   align-content: end;
 }
 
+/* || BEANS */
+
+#beans-articles {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(5, auto);
+  height: auto;
+  width: auto;
+  gap: 20px;
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "e"
+    "d";
+}
+
+@media (min-width: 768px) {
+  #beans-articles {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "a a b b"
+      "a a b b"
+      "c c e e"
+      "c c e e"
+      "d d e e";
+  }
+}
+
+#freshness-matters-most {
+  grid-area: a;
+}
+
+#always-buy-whole-beans {
+  grid-area: b;
+}
+
+#single-origin-vs-blends {
+  grid-area: c;
+}
+
+#where-to-buy {
+  grid-area: d;
+}
+
+#roast-levels {
+  grid-area: e;
+}
+
+
+#beans-articles article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 24px;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  padding: 20px;
+  gap: 6px;
+  background: var(--primary-color);
+  box-shadow: var(--neutral-dark);
+}
 
 /* || EQUIPMENT */
 
