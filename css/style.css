@@ -410,6 +410,82 @@ footer ul {
 
 /* || EQUIPMENT */
 
+#core-equipment {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  height: auto;
+  width: auto;
+  gap: 20px;
+  grid-template-areas:
+    "a"
+    "b"
+}
+
+#espresso-machine {
+  grid-area: a;
+}
+
+#grinder {
+  grid-area: b;
+}
+
+#espresso-machine,
+#grinder {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 7;
+  height: auto;
+  width: auto;
+  border-radius: 8px;
+  padding: 20px;
+  background: var(--primary-color);
+  box-shadow: var(--neutral-dark);
+  grid-template-areas:
+    "a"
+    "b"
+    "b"
+    "b"
+    "b"
+    "c"
+    "c"
+    "d"
+}
+
+@media (min-width: 768px) {
+
+  #espresso-machine,
+  #grinder {
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "a a a a a a a"
+      "b b b b c c c"
+      "b b b b c c c"
+      "b b b b d d d"
+      "b b b b d d d"
+  }
+}
+
+#espresso-machine h2,
+#grinder h2 {
+  grid-area: a;
+}
+
+.equipment-info {
+  grid-area: b;
+}
+
+.image-and-advice image {
+  grid-area: c;
+}
+
+.image-and-advice .advice {
+  grid-area: d;
+}
+
+
+
 #core-accessories,
 #nicetohave-accessories {
   display: grid;
