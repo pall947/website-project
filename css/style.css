@@ -524,6 +524,62 @@ footer ul {
   }
 }
 
+/* || BREWING GUIDE */
+
+#preparation > *,
+#preparation ul>li {
+  color: var(--neutral-light);
+}
+
+#brewing-guide{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+
+#brewing-guide{
+  max-width: 750px;
+}
+}
+
+#brewing-guide h2{
+  color: var(--accent-color-3);
+}
+
+#brewing-guide-steps {
+  display: flex;
+  flex-direction: column;
+}
+
+#brewing-guide-step {
+  display: flex;
+  flex-direction: column;
+}
+
+.brewing-step-title {
+  color: var(--accent-color-1);
+}
+
+#troubleshooting {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+}
+
+#troubleshooting h3 {
+  color: var(--accent-color-3);
+}
+
+#troubleshooting strong {
+  color: var(--accent-color-2);
+}
+
+
 /* || ESPRESSO */
 
 .espresso-grid {
@@ -552,8 +608,9 @@ footer ul {
 }
 
 .espresso-grid article {
-  background-color: #E4E8D8;
+  background-color: var(--primary-color);
   padding: 10px;
+  border-radius: 8px;
 }
 
 label,
