@@ -4,25 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pall">
     <title>Espresso</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
     <header>
-        <a class="logo" href="index.html"><img src="img/beans to brew - logo.png" height="50"
+        <a class="logo" href="index.html"><img src="img/beans-to-brew-logo.png" height="50"
                 alt="Beans to Brew Logo"></a>
 
         <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" , class="hamburger">&#9776; Menu</label>
+        <label for="menu-toggle" class="hamburger">&#9776; Menu</label>
 
         <nav class="site-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="beans.html">Beans</a></li>
                 <li><a href="equipment.html">Equipment</a></li>
                 <li><a href="guides.html">Brewing Guide</a></li>
-                <li><a href="espresso.html" , class="active">Espresso</a></li>
+                <li><a href="espresso.html" class="active">Espresso</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -54,7 +55,7 @@
             <article id="vs-other-methods-text">
                 <h2>Espresso vs. Other Methods</h2>
                 <p>Espresso uses high pressure. Other methods rely on gravity or immersion.
-                <table>
+                <table id="comparison-table">
                     <thead>
                         <tr>
                             <th>Feature</th>
@@ -150,7 +151,7 @@
 
     <footer>
         <section class="footer-container">
-            <a class="footer-logo" href="index.html"><img src="img/beans to brew - logo - sq.png" height="40"
+            <a class="footer-logo" href="index.html"><img src="img/beans-to-brew-logo-sq.png" height="40"
                     alt="Beans to Brew Logo"></a>
             <article class="footer-container-list">
                 <h5>Beans</h5>
@@ -187,6 +188,8 @@
                     <li><a href="espresso.html#espresso-drinks">Popular Espresso Drinks</a></li>
                 </ul>
             </article>
+        </section>
+        <p><small>&copy; 2026 Beans to Brew. All rights reserved.</small></p>
     </footer>
 </body>
 

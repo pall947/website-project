@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pall">
     <title>Contact Page</title>
     <link rel="icon" type="image/x-icon" href="/img/beans-to-brew-favicon.png">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -11,20 +12,20 @@
 
 <body>
     <header>
-        <a class="logo" href="index.html"><img src="img/beans to brew - logo.png" height="50"
+        <a class="logo" href="index.html"><img src="img/beans-to-brew-logo.png" height="50"
                 alt="Beans to Brew Logo"></a>
 
         <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" , class="hamburger">&#9776; Menu</label>
+        <label for="menu-toggle" class="hamburger">&#9776; Menu</label>
 
         <nav class="site-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="beans.html">Beans</a></li>
                 <li><a href="equipment.html">Equipment</a></li>
                 <li><a href="guides.html">Brewing Guide</a></li>
                 <li><a href="espresso.html">Espresso</a></li>
-                <li><a href="contact.html" , class="active">Contact Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -45,45 +46,49 @@
             <section id="contact-form-section">
                 <form id="contact-form">
                     <h4>Contact Us</h4>
-                    <article id="form-title">
-                        <!-- Title -->
-                        <label for="ftitle">Title *</label>
-                        <select id="ftitle" type="text" name="ftitle">
-                            <option value="Mr.">Mr.</option>
-                            <option value="Ms.">Ms.</option>
-                            <option value="mx.">Mx.</option>
-                        </select>
-                    </article>
-                    <article id="form-fname">
-                        <!-- First Name -->
-                        <label for="first-name">First name *</label>
-                        <input id="first-name" type="text" name="first-name">
-                    </article>
-                    <article id="form-surname">
-                        <!-- Surname -->
-                        <label for="surname">Surname *</label>
-                        <input id="surname" type="text" name="surname">
-                    </article>
-                    <article id="form-telephone">
-                        <!-- Telephone number -->
-                        <label for="telephone">Telephone number *</label>
-                        <input id="telephone" type="telephone" name="telephone">
-                        <caption>Include Country Code</caption>
-                    </article>
-                    <article id="form-email">
-                        <!-- Email -->
-                        <label for="email">Email *</label>
-                        <input id="email" type="email" name="email">
-                    </article>
+                    <fieldset>
+                        <legend>Your Details</legend>
+                        <article id="form-title">
+
+                            <!-- Title -->
+                            <label for="ftitle">Title *</label>
+                            <select id="ftitle" type="text" name="ftitle">
+                                <option value="Mr.">Mr.</option>
+                                <option value="Ms.">Ms.</option>
+                                <option value="mx.">Mx.</option>
+                            </select>
+                        </article>
+                        <article id="form-fname">
+                            <!-- First Name -->
+                            <label for="first-name">First name *</label>
+                            <input id="first-name" type="text" name="first-name">
+                        </article>
+                        <article id="form-surname">
+                            <!-- Surname -->
+                            <label for="surname">Surname *</label>
+                            <input id="surname" type="text" name="surname">
+                        </article>
+                        <article id="form-telephone">
+                            <!-- Telephone number -->
+                            <label for="telephone">Telephone number *</label>
+                            <input id="telephone" type="telephone" name="telephone">
+                            <em>Include Country Code</em>
+                        </article>
+                        <article id="form-email">
+                            <!-- Email -->
+                            <label for="email">Email *</label>
+                            <input id="email" type="email" name="email">
+                        </article>
+                    </fieldset>
                     <article id="form-message">
                         <!-- Message -->
                         <label for="message">Questions / Suggestions / Requests *</label>
                         <textarea id="message" name="message" rows="6" cols="50"></textarea>
                     </article>
                     <article id="form-button">
-                        <button type="submit">Send Message</button>
+                        <input type="submit" value="Send Message">
                     </article>
-                    <caption id="form-extra-info">Fields with an asterisk (*) are mandatory.</caption>
+                    <em id="form-extra-info">Fields with an asterisk (*) are mandatory.</em>
                 </form>
             </section>
         </section>
@@ -91,7 +96,7 @@
 
     <footer>
         <section class="footer-container">
-            <a class="footer-logo" href="index.html"><img src="img/beans to brew - logo - sq.png" height="40"
+            <a class="footer-logo" href="index.html"><img src="img/beans-to-brew-logo-sq.png" height="40"
                     alt="Beans to Brew Logo"></a>
             <article class="footer-container-list">
                 <h5>Beans</h5>
@@ -128,6 +133,8 @@
                     <li><a href="espresso.html#espresso-drinks">Popular Espresso Drinks</a></li>
                 </ul>
             </article>
+        </section>
+        <p><small>&copy; 2026 Beans to Brew. All rights reserved.</small></p>
     </footer>
 </body>
 
