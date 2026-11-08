@@ -423,6 +423,18 @@ footer ul {
     "d";
 }
 
+#beans-articles h2 {
+  color: var(--accent-color-3);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#beans-articles h3 {
+  color: var(--accent-color-1);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 @media (min-width: 768px) {
   #beans-articles {
     grid-template-columns: repeat(4, auto);
@@ -455,6 +467,11 @@ footer ul {
 #roast-levels {
   grid-area: e;
 }
+
+#beans1 {
+  grid-area: v;
+}
+
 
 
 #beans-articles article {
@@ -493,9 +510,42 @@ footer ul {
   grid-area: b;
 }
 
+#espresso-machine h2,
+#grinder h2 {
+  color: var(--accent-color-3);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#espresso-machine h3,
+#grinder h3 {
+  color: var(--accent-color-1);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#accessories {
+  margin-top: 6em;
+  margin-bottom: 4em;
+}
+
+#accessories h2 {
+  color: var(--neutral-light);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 #espresso-machine em,
 #grinder em {
   text-transform: uppercase;
+}
+
+.image-and-advice .advice {
+  background-color: var(--secondary-color);
+  color: var(--neutral-light);
+  padding: 10px;
+  border-radius: 8px;
+  word-spacing: 0.1em;
 }
 
 #espresso-machine,
@@ -616,6 +666,8 @@ footer ul {
 
 #brewing-guide h2 {
   color: var(--accent-color-3);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #brewing-guide-steps {
@@ -672,6 +724,12 @@ footer ul {
 
 /* Comparison to other brewing methods */
 
+#vs-other-methods h2 {
+  color: var(--accent-color-3);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 #vs-other-methods {
   display: grid;
   grid-template-columns: 1fr;
@@ -710,11 +768,11 @@ footer ul {
   margin-bottom: 1.2em;
 }
 
-#comparison-table tbody tr:nth-child(even){
+#comparison-table tbody tr:nth-child(even) {
   background-color: #CFF;
 }
 
-#comparison-table tbody tr:nth-child(odd){
+#comparison-table tbody tr:nth-child(odd) {
   background-color: #FFF;
 }
 
