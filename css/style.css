@@ -374,16 +374,24 @@ footer ul {
 }
 
 .homepage-cards article a.btn {
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
   color: var(--neutral-light);
   background-color: var(--accent-color-2);
   border-radius: 8px;
-  padding: 10px;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
   width: 100%;
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+}
+
+.homepage-cards article a.btn:hover {
+  background-color: var(--secondary-color);
 }
 
 .homepage-cards img {
