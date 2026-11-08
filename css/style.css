@@ -373,7 +373,7 @@ footer ul {
   box-shadow: var(--neutral-dark);
 }
 
-.homepage-cards article button {
+.homepage-cards article a.btn {
   color: var(--neutral-light);
   background-color: var(--accent-color-2);
   border-radius: 8px;
