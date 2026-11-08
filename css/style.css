@@ -373,7 +373,8 @@ footer ul {
   box-shadow: var(--neutral-dark);
 }
 
-.homepage-cards article a.btn {
+.homepage-cards article a.btn,
+#form-submit-btn {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
@@ -934,7 +935,7 @@ textarea {
     grid-template-columns: 1fr 1fr;
   }
 
-  #contact-form h4 {
+  #contact-form h2 {
     grid-column: 1 / -1;
   }
 
