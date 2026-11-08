@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="icon" type="image/x-icon" href="/img/beans to brew - favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html"><img src="img/beans to brew - logo.png" height="50"
+                alt="Beans to Brew Logo"></a>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" , class="hamburger">&#9776; Menu</label>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="beans.html">Beans</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="guides.html">Brewing Guide</a></li>
+                <li><a href="espresso.html">Espresso</a></li>
+                <li><a href="contact.html" , class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <article class="introduction-text">
+                <h1>Get in Touch</h1>
+                <p>Help us improve this guide. Questions, suggestions, or issues?</p>
+                <p>We read every message and aim to reply within 48 working hours.</p>
+            </article>
+        </section>
+        <section id="img-and-form">
+            <figure>
+                <img src="img/placeholder - espresso1.jpg" alt="espresso">
+                <figcaption>Espresso</figcaption>
+            </figure>
+            <section id="contact-form-section">
+                <form id="contact-form" action="/" method="POST">
+                    <h4>Contact Us</h4>
+                    <article id="form-title">
+                        <!-- Title -->
+                        <label for="ftitle">Title *</label>
+                        <select id="ftitle" type="text" name="ftitle">
+                            <option value="Mr.">Mr.</option>
+                            <option value="Ms.">Ms.</option>
+                            <option value="mx.">Mx.</option>
+                        </select>
+                    </article>
+                    <article id="form-fname">
+                        <!-- First Name -->
+                        <label for="first-name">First name *</label>
+                        <input id="first-name" type="text" name="first-name">
+                    </article>
+                    <article id="form-surname">
+                        <!-- Surname -->
+                        <label for="surname">Surname *</label>
+                        <input id="surname" type="text" name="surname">
+                    </article>
+                    <article id="form-telephone">
+                        <!-- Telephone number -->
+                        <label for="telephone">Telephone number *</label>
+                        <input id="telephone" type="telephone" name="telephone">
+                        <caption>Include Country Code</caption>
+                    </article>
+                    <article id="form-email">
+                        <!-- Email -->
+                        <label for="email">Email *</label>
+                        <input id="email" type="email" name="email">
+                    </article>
+                    <article id="form-message">
+                        <!-- Message -->
+                        <label for="message">Questions / Suggestions / Requests *</label>
+                        <textarea id="message" name="message" rows="6" cols="50"></textarea>
+                    </article>
+                    <article id="form-button">
+                        <button type="submit">Send Message</button>
+                    </article>
+                    <caption id="form-extra-info">Fields with an asterisk (*) are mandatory.</caption>
+                </form>
+            </section>
+        </section>
+
+        <footer>
+            <section class="footer-container">
+                <a class="footer-logo" href="index.html"><img src="img/beans to brew - logo - sq.png" height="40"
+                        alt="Beans to Brew Logo"></a>
+                <article class="footer-container-list">
+                    <h5>Beans</h5>
+                    <ul>
+                        <li>Freshness Matters Most</li>
+                        <li>Always Buy Whole Beans</li>
+                        <li>Single Origin vs Blends</li>
+                        <li>Roast Levels</li>
+                        <li>Where to Buy</li>
+                    </ul>
+                </article>
+                <article class="footer-container-list">
+                    <h5>Equipment</h5>
+                    <ul>
+                        <li>Espresso Machine</li>
+                        <li>Grinder</li>
+                        <li>Core Accessories</li>
+                        <li>Nice-to-Have Accessories</li>
+                    </ul>
+                </article>
+                <article class="footer-container-list">
+                    <h5>Brewing Guide</h5>
+                    <ul>
+                        <li>Before You Begin</li>
+                        <li>Making a Double Espresso Shot</li>
+                        <li>Troubleshooting</li>
+                    </ul>
+                </article>
+                <article class="footer-container-list">
+                    <h5>Espresso</h5>
+                    <ul>
+                        <li>What is Espresso?</li>
+                        <li>Espresso vs. Other Methods</li>
+                        <li>Popular Espresso Drinks</li>
+                    </ul>
+                </article>
+        </footer>
+    </main>
+</body>
+
+</html>
