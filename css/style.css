@@ -236,8 +236,13 @@ nav {
   background-color: var(--nav-btn-color-hover);
 }
 
-.site-nav a.active {
+.site-nav a:active {
   background-color: var(--secondary-color-dark);
+  color: var(--neutral-light);
+}
+
+.site-nav a.selected {
+  background-color: var(--secondary-color);
   color: var(--neutral-light);
 }
 
@@ -289,6 +294,11 @@ footer a:visited {
 
 footer a:hover {
   background-color: var(--nav-btn-color-hover);
+}
+
+footer a:active {
+  background-color: var(--secondary-color-dark);
+  color: var(--neutral-light);
 }
 
 @media (min-width: 768px) {
