@@ -436,6 +436,21 @@ footer ul {
   align-content: end;
 }
 
+.cookie-banner {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  background-color: var(--accent-color-2);
+  text-align: center;
+}
+
+.cookie-banner p {
+  color: var(--neutral-light);
+}
+
 /* || BEANS */
 
 #beans-articles {
