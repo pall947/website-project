@@ -442,7 +442,7 @@ footer ul {
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 1em;
+  padding: 0.1em;
   background-color: var(--accent-color-2);
   text-align: center;
 }
@@ -888,6 +888,10 @@ footer ul {
   background-color: var(--primary-color);
   padding: 10px;
   border-radius: 8px;
+}
+
+#espresso-drinks {
+  margin-bottom: 4em;
 }
 
 label,
